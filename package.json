@@ -1,0 +1,24 @@
+{
+    "name": "Mode Mechanical Keyboards 3D Configurator - Demo",
+    "author": "high-haseeb",
+    "description": "Mode Mechanical Keyboards 3D Configurator - Demo",
+    "private": true,
+    "version": "0.0.0",
+    "type": "module",
+    "scripts": {
+        "dev": "vite --port 6969",
+        "build": "tsc && vite build",
+        "preview": "vite preview"
+    },
+    "devDependencies": {
+        "@tailwindcss/vite": "^4.3.1",
+        "@types/three": "^0.185.1",
+        "tailwindcss": "^4.3.1",
+        "typescript": "~6.0.2",
+        "vite": "^8.0.12"
+    },
+    "dependencies": {
+        "three": "^0.185.1",
+        "three-gpu-pathtracer": "^0.0.24"
+    }
+}

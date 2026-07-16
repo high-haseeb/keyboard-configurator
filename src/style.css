@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@theme {
+    --color-brGreen:  #1F2720;
+    --color-brWhite:  #EDE6D9;
+    --color-brYellow: #FFBB65;
+}
+
+.divider {
+    @apply w-full min-h-1 bg-brWhite/20 my-8
+}
+
+.brSectionTitle {
+    @apply text-3xl
+}
+
+div[id$="-container"] {
+    @apply flex flex-col gap-2
+}
+
+.brButton {
+    @apply px-4 py-2 w-full text-left outline-1 outline-brWhite/20
+    rounded-sm text-lg flex items-center justify-between transition-colors
+    hover:bg-brWhite/20 cursor-pointer
+    data-[active=true]:bg-brYellow data-[active=true]:text-brGreen
+}
+
+.brButton > :nth-child(2) {
+    @apply font-mono
+}

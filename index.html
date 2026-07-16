@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="high-haseeb" />
+        <title>Mode Design 3D Keyboard Configurator | Demo</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=B612:ital,wght@0,400;0,700;1,400;1,700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    </head>
+    <body class="w-[100vw] h-[100dvh] overflow-hidden bg-brGreen text-brWhite font-[Lora] px-40 box-border flex flex-col">
+        <header class="flex items-start justify-between my-10">
+            <div id="navbar" class="text-4xl font-bold">MODE DEMO</div>
+            <button class="bg-brWhite text-brGreen px-6 py-2 rounded-md">Contact Now</button>
+        </header>
+
+        <main class="flex-1 min-w-0 mb-10 flex gap-10 box-border max-h-full overflow-y-hidden">
+            <canvas id="web3d" class="bg-brWhite w-2/3 min-w-0 rounded-2xl"></canvas>
+            <!-- Configurator UI -->
+            <div class="flex flex-col gap-4 h-full w-1/3 text-brWhite overflow-y-scroll overflow-x-hidden
+                        scrollbar-gutter-auto scrollbar-thin scrollbar-thumb-brWhite/20 scrollbar-track-transparent
+                        hover:scrollbar-thumb-brWhite scroll-smooth pr-4 pl-1">
+                <div class="text-5xl">Sonnet</div>
+                <div class="divider"></div>
+
+                <div class="brSectionTitle">Select Edition</div>
+                <div id="editions-container"></div>
+                <div class="divider"></div>
+
+                <div class="brSectionTitle">Select PCB Type</div>
+                <div id="pcb-container"></div>
+                <div class="divider"></div>
+
+                <div class="brSectionTitle">Select Plate Material</div>
+                <div id="plateMaterial-container"></div>
+                <div class="divider"></div>
+
+                <div class="brSectionTitle">Select Your Switches</div>
+                <div id="switches-container"></div>
+                <div class="divider"></div>
+
+                <div class="brSectionTitle">Select Your KeyCaps</div>
+                <div id="keycaps-container"></div>
+                <div class="divider"></div>
+
+                <div class="brSectionTitle">Include Stabilizers?</div>
+                <div id="stabilizer-container"></div>
+                <div class="divider"></div>
+            </div>
+        </main>
+
+        <footer class="w-full bg-brWhite mb-10 rounded-lg text-brGreen py-2 px-4 flex items-center justify-between">
+            <span class="text-xl">Sonnet</span>
+            <span id="totalPrice" class="text-xl font-mono"></span>
+        </footer>
+        <script type="module" src="/src/main.ts"></script>
+    </body>
+</html>
