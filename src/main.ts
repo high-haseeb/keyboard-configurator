@@ -5,8 +5,9 @@ import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js";
 import { HDRLoader } from "three/addons/loaders/HDRLoader.js";
 
 // Parameters
-const modelPath = "/models/keyboard.glb";
-const hdriPath = "/hdri/studio_1k.hdr";
+const baseUrl = import.meta.env.BASE_URL;
+const modelPath = `${baseUrl}models/keyboard.glb`;
+const hdriPath = `${baseUrl}hdri/studio_1k.hdr`;
 let upperBody: THREE.Mesh|undefined;
 let lowerBody: THREE.Mesh|undefined;
 let keysInner: THREE.Mesh|undefined;
